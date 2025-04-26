@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Pokédex</h1>
+
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search Pokémon">
+        <select id="typeFilter">
+            <option value="all">Filter by Type</option>
+        </select>
+        <select id="generationFilter">
+            <option value="all">Filter by Generation</option>
+        </select>
+    </div>
+
+    <div class="generation-toggle">
+        <label><input type="radio" name="generation" value="gen1" checked> Gen I</label>
+        <label><input type="radio" name="generation" value="gen2"> Gen II</label>
+    </div>
+
+    <div id="pokedex" class="pokedex-grid"></div>
+
+    <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageInfo">Page 1 of X</span>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
